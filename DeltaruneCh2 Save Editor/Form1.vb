@@ -11,7 +11,6 @@ Public Class Form1
         Dim appdataPath As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
         Dim Delfol As String = appdataPath + "\DELTARUNE"
         OpenFileDialog1.Filter = "Deltarune Save File |*_0; *_1; *_2; *_9;"
-        Label1.Text = Delfol
         OpenFileDialog1.InitialDirectory = Delfol
         OpenFileDialog1.Title = "Please Open Deltarune Save File"
         OpenFileDialog1.FileName = "Filech2_0"
@@ -22,6 +21,12 @@ Public Class Form1
     End Sub
 
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
+
+    End Sub
+
+
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
