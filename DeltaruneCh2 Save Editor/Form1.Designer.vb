@@ -27,6 +27,7 @@ Partial Class Form1
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Openfile = New System.Windows.Forms.Button()
+        Me.filviw = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'Title
@@ -44,7 +45,7 @@ Partial Class Form1
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CheckBox1.Location = New System.Drawing.Point(8, 207)
+        Me.CheckBox1.Location = New System.Drawing.Point(9, 69)
         Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(161, 28)
@@ -71,6 +72,18 @@ Partial Class Form1
         Me.Openfile.Text = "Open Save File"
         Me.Openfile.UseVisualStyleBackColor = False
         '
+        'filviw
+        '
+        Me.filviw.BackColor = System.Drawing.Color.Black
+        Me.filviw.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.filviw.ForeColor = System.Drawing.Color.White
+        Me.filviw.FormattingEnabled = True
+        Me.filviw.ItemHeight = 23
+        Me.filviw.Location = New System.Drawing.Point(536, 9)
+        Me.filviw.Name = "filviw"
+        Me.filviw.Size = New System.Drawing.Size(150, 119)
+        Me.filviw.TabIndex = 3
+        '
         'Form1
         '
         Me.AccessibleRole = System.Windows.Forms.AccessibleRole.None
@@ -78,6 +91,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(714, 294)
+        Me.Controls.Add(Me.filviw)
         Me.Controls.Add(Me.Openfile)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Title)
@@ -95,4 +109,5 @@ Partial Class Form1
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Openfile As Button
+    Friend WithEvents filviw As ListBox
 End Class
