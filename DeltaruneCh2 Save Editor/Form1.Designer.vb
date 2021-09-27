@@ -22,8 +22,12 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Title = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Openfile = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Title
@@ -40,23 +44,53 @@ Partial Class Form1
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CheckBox1.Location = New System.Drawing.Point(15, 46)
+        Me.CheckBox1.Location = New System.Drawing.Point(8, 206)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(161, 28)
         Me.CheckBox1.TabIndex = 1
         Me.CheckBox1.Text = "Dark World Kris"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFile"
+        '
+        'Openfile
+        '
+        Me.Openfile.BackColor = System.Drawing.Color.Black
+        Me.Openfile.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Openfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Openfile.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Openfile.ForeColor = System.Drawing.Color.White
+        Me.Openfile.Location = New System.Drawing.Point(427, 31)
+        Me.Openfile.Name = "Openfile"
+        Me.Openfile.Size = New System.Drawing.Size(151, 29)
+        Me.Openfile.TabIndex = 2
+        Me.Openfile.Text = "Open Save File"
+        Me.Openfile.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(301, 135)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(85, 33)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Label1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 33.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(701, 281)
+        Me.ClientSize = New System.Drawing.Size(714, 294)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Openfile)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Title)
         Me.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ForeColor = System.Drawing.Color.White
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -66,4 +100,7 @@ Partial Class Form1
 
     Friend WithEvents Title As Label
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Openfile As Button
+    Friend WithEvents Label1 As Label
 End Class
