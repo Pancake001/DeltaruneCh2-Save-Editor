@@ -1,4 +1,4 @@
 # DeltaruneCh2-Save-Editor
 This is a tool I am making to make it easier to edit Deltarune Save Files. <br>
 This is very very very unfinished.<br>
-Currently trying to get the list box to work.
+I finally got the list box working.
