@@ -34,10 +34,34 @@ Public Class Form1
 
     Private Sub darkkrisbox_CheckedChanged(sender As Object, e As EventArgs) Handles darkkrisbox.CheckedChanged
         If darkkrisbox.Checked = True Then
-            ListBox1.Items(16) = 1 ''Changes Kris to be in Dark World form.
+            ListBox1.Items(15) = 1 ''Changes Kris to be in Dark World form.
         End If
         If darkkrisbox.Checked = False Then
-            ListBox1.Items(16) = 0 ''Changes Kris to be in Light World form.
+            ListBox1.Items(15) = 0 ''Changes Kris to be in Light World form.
         End If
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim appdataPath As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
+        Dim Delfol As String = appdataPath + "\DELTARUNE"
+        SaveFileDialog1.Filter = "Deltarune Chapter 2 Save File |*2_0; *2_1; *2_2; *2_9; | Text Files |*.txt"
+        SaveFileDialog1.InitialDirectory = Delfol
+        SaveFileDialog1.Title = "Choose what file to overwrite."
+        SaveFileDialog1.FileName = "Filech2_0"
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+
+        End If
+    End Sub
+
+
+    Private Sub Apply_Click(sender As Object, e As EventArgs) Handles Apply.Click
+        If roomchanger.Text = "" Then
+            roomchanger.Text = "11"
+        End If ''h
+        Dim room As String
+        room = roomchanger.Text
+        ListBox1.Items(3053) = room
+    End Sub
+
+
 End Class
