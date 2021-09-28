@@ -10,19 +10,19 @@ Public Class Form1
 
         Dim appdataPath As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
         Dim Delfol As String = appdataPath + "\DELTARUNE"
-        OpenFileDialog1.Filter = "Deltarune Save File |*_0; *_1; *_2; *_9;"
+        OpenFileDialog1.Filter = "Deltarune Chapter 2 Save File |*2_0; *2_1; *2_2; *2_9;"
         OpenFileDialog1.InitialDirectory = Delfol
         OpenFileDialog1.Title = "Please Open Deltarune Save File"
         OpenFileDialog1.FileName = "Filech2_0"
         If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+            ListBox1.Items.Add(DialogResult)
+
 
         End If
 
     End Sub
 
-    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
 
-    End Sub
 
 
 

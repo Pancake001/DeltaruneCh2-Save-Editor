@@ -27,7 +27,7 @@ Partial Class Form1
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Openfile = New System.Windows.Forms.Button()
-        Me.filviw = New System.Windows.Forms.ListBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'Title
@@ -37,9 +37,9 @@ Partial Class Form1
         Me.Title.Location = New System.Drawing.Point(-2, -3)
         Me.Title.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Title.Name = "Title"
-        Me.Title.Size = New System.Drawing.Size(224, 24)
+        Me.Title.Size = New System.Drawing.Size(259, 24)
         Me.Title.TabIndex = 0
-        Me.Title.Text = "Deltarune Save File Editor"
+        Me.Title.Text = "Deltarune Chapter 2 Save Tool"
         '
         'CheckBox1
         '
@@ -72,17 +72,17 @@ Partial Class Form1
         Me.Openfile.Text = "Open Save File"
         Me.Openfile.UseVisualStyleBackColor = False
         '
-        'filviw
+        'ListBox1
         '
-        Me.filviw.BackColor = System.Drawing.Color.Black
-        Me.filviw.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.filviw.ForeColor = System.Drawing.Color.White
-        Me.filviw.FormattingEnabled = True
-        Me.filviw.ItemHeight = 23
-        Me.filviw.Location = New System.Drawing.Point(536, 9)
-        Me.filviw.Name = "filviw"
-        Me.filviw.Size = New System.Drawing.Size(150, 119)
-        Me.filviw.TabIndex = 3
+        Me.ListBox1.BackColor = System.Drawing.Color.Black
+        Me.ListBox1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ListBox1.ForeColor = System.Drawing.Color.White
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 23
+        Me.ListBox1.Location = New System.Drawing.Point(536, 9)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(150, 119)
+        Me.ListBox1.TabIndex = 3
         '
         'Form1
         '
@@ -91,7 +91,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(714, 294)
-        Me.Controls.Add(Me.filviw)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Openfile)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Title)
@@ -99,7 +99,8 @@ Partial Class Form1
         Me.ForeColor = System.Drawing.Color.White
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Deltarune Chapter 2 File Tool"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Deltarune Chapter 2 Save Tool"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -109,5 +110,5 @@ Partial Class Form1
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Openfile As Button
-    Friend WithEvents filviw As ListBox
+    Friend WithEvents ListBox1 As ListBox
 End Class
