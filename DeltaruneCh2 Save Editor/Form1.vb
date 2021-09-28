@@ -15,8 +15,12 @@ Public Class Form1
         OpenFileDialog1.Title = "Please Open Deltarune Save File"
         OpenFileDialog1.FileName = "Filech2_0"
         If OpenFileDialog1.ShowDialog = DialogResult.OK Then
-            Title.Text = DialogResult.OK
-            ListBox1.Items.Add(DialogResult)
+            Dim filedialog As New OpenFileDialog
+
+
+            Title.Text = OpenFileDialog1.FileName
+            Dim lines() As String = IO.File.ReadAllLines(OpenFileDialog1.FileName)
+            ListBox1.Items.AddRange(lines)
 
 
         End If
