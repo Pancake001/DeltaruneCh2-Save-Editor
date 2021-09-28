@@ -24,10 +24,12 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Title = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.darkkrisbox = New System.Windows.Forms.CheckBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Openfile = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.SuspendLayout()
         '
         'Title
@@ -41,17 +43,17 @@ Partial Class Form1
         Me.Title.TabIndex = 0
         Me.Title.Text = "Deltarune Chapter 2 Save Tool"
         '
-        'CheckBox1
+        'darkkrisbox
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CheckBox1.Location = New System.Drawing.Point(9, 69)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(161, 28)
-        Me.CheckBox1.TabIndex = 1
-        Me.CheckBox1.Text = "Dark World Kris"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.darkkrisbox.AutoSize = True
+        Me.darkkrisbox.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.darkkrisbox.Location = New System.Drawing.Point(9, 69)
+        Me.darkkrisbox.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.darkkrisbox.Name = "darkkrisbox"
+        Me.darkkrisbox.Size = New System.Drawing.Size(161, 28)
+        Me.darkkrisbox.TabIndex = 1
+        Me.darkkrisbox.Text = "Dark World Kris"
+        Me.darkkrisbox.UseVisualStyleBackColor = True
         '
         'OpenFileDialog1
         '
@@ -79,10 +81,25 @@ Partial Class Form1
         Me.ListBox1.ForeColor = System.Drawing.Color.White
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 23
-        Me.ListBox1.Location = New System.Drawing.Point(536, 9)
+        Me.ListBox1.Location = New System.Drawing.Point(881, 12)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(150, 119)
+        Me.ListBox1.Size = New System.Drawing.Size(189, 418)
         Me.ListBox1.TabIndex = 3
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Black
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(881, 451)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(189, 30)
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "Save"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -90,10 +107,11 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 33.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(714, 294)
+        Me.ClientSize = New System.Drawing.Size(1082, 493)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Openfile)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.darkkrisbox)
         Me.Controls.Add(Me.Title)
         Me.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ForeColor = System.Drawing.Color.White
@@ -107,8 +125,10 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Title As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents darkkrisbox As CheckBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Openfile As Button
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class

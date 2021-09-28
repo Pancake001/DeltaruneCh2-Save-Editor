@@ -1,9 +1,7 @@
 ﻿
 Public Class Form1
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
 
-    End Sub
 
     Private Sub Openfile_Click(sender As Object, e As EventArgs) Handles Openfile.Click
 
@@ -22,8 +20,21 @@ Public Class Form1
             Dim lines() As String = IO.File.ReadAllLines(OpenFileDialog1.FileName)
             ListBox1.Items.AddRange(lines)
 
+            '' Checks if Lightworld kris is on.
+            If ListBox1.Items(16) = 1 Then
+                darkkrisbox.Checked = False
+            End If
+
+            If ListBox1.Items(16) = 0 Then
+                darkkrisbox.Checked = True
+            End If
+
 
         End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
 
     End Sub
 End Class
