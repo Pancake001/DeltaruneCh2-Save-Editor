@@ -42,15 +42,12 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim appdataPath As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
-        Dim Delfol As String = appdataPath + "\DELTARUNE"
-        SaveFileDialog1.Filter = "Deltarune Chapter 2 Save File |*2_0; *2_1; *2_2; *2_9; | Text Files |*.txt"
-        SaveFileDialog1.InitialDirectory = Delfol
-        SaveFileDialog1.Title = "Choose what file to overwrite."
-        SaveFileDialog1.FileName = "Filech2_0"
-        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+        Dim SW As IO.StreamWriter = IO.File.CreateText(OpenFileDialog1.FileName)
+        For Each S As String In ListBox1.Items
+            SW.WriteLine(S)
+        Next
+        SW.Close()
 
-        End If
     End Sub
 
 
