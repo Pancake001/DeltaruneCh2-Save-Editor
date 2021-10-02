@@ -29,8 +29,6 @@ Public Class Form1
             Else
                 darkkrisbox.Checked = False
             End If
-
-
             If ListBox1.Items(7) = 1 Then
                 Part1.SelectedItem = "Kris"
             End If
@@ -52,8 +50,6 @@ Public Class Form1
             If ListBox1.Items(9) = 0 Then
                 Part3.SelectedItem = "None"
             End If
-
-
             If ListBox1.Items(8) = 1 Then
                 Part2.SelectedItem = "Kris"
             End If
@@ -66,7 +62,6 @@ Public Class Form1
             If ListBox1.Items(8) = 4 Then
                 Part2.SelectedItem = "Noelle"
             End If
-
             If ListBox1.Items(9) = 1 Then
                 Part3.SelectedItem = "Kris"
             End If
@@ -87,14 +82,6 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub darkkrisbox_CheckedChanged(sender As Object, e As EventArgs) Handles darkkrisbox.CheckedChanged
-        If darkkrisbox.Checked = True Then
-            ListBox1.Items(15) = 1 ''Changes Kris to be in Dark World form.
-        End If
-        If darkkrisbox.Checked = False Then
-            ListBox1.Items(15) = 0 ''Changes Kris to be in Light World form.
-        End If
-    End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
@@ -170,6 +157,13 @@ Public Class Form1
         End If
         If Part3.SelectedItem = "Noelle" Then
             ListBox1.Items(9) = 4
+        End If
+
+        If darkkrisbox.Checked = True Then
+            ListBox1.Items(15) = 1 ''Changes Kris to be in Dark World form.
+        End If
+        If darkkrisbox.Checked = False Then
+            ListBox1.Items(15) = 0 ''Changes Kris to be in Light World form.
         End If
 
     End Sub

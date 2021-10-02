@@ -29,14 +29,9 @@ Partial Class Form1
         Me.Openfile = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.roomchanger = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Apply = New System.Windows.Forms.Button()
-        Me.KrisName = New System.Windows.Forms.TextBox()
-        Me.Darkcash = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Part1 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Part2 = New System.Windows.Forms.ComboBox()
@@ -44,6 +39,19 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Part3 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.KrisName = New System.Windows.Forms.TextBox()
+        Me.Darkcash = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Title
@@ -60,13 +68,14 @@ Partial Class Form1
         'darkkrisbox
         '
         Me.darkkrisbox.AutoSize = True
+        Me.darkkrisbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.darkkrisbox.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.darkkrisbox.Location = New System.Drawing.Point(13, 373)
+        Me.darkkrisbox.Location = New System.Drawing.Point(8, 382)
         Me.darkkrisbox.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.darkkrisbox.Name = "darkkrisbox"
-        Me.darkkrisbox.Size = New System.Drawing.Size(161, 28)
+        Me.darkkrisbox.Size = New System.Drawing.Size(182, 28)
         Me.darkkrisbox.TabIndex = 1
-        Me.darkkrisbox.Text = "Dark World Kris"
+        Me.darkkrisbox.Text = "Dark World Toggle"
         Me.darkkrisbox.UseVisualStyleBackColor = True
         '
         'OpenFileDialog1
@@ -117,7 +126,7 @@ Partial Class Form1
         '
         'roomchanger
         '
-        Me.roomchanger.Location = New System.Drawing.Point(12, 440)
+        Me.roomchanger.Location = New System.Drawing.Point(8, 440)
         Me.roomchanger.Name = "roomchanger"
         Me.roomchanger.Size = New System.Drawing.Size(125, 41)
         Me.roomchanger.TabIndex = 6
@@ -127,7 +136,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(8, 404)
+        Me.Label1.Location = New System.Drawing.Point(8, 413)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(151, 24)
         Me.Label1.TabIndex = 7
@@ -147,40 +156,6 @@ Partial Class Form1
         Me.Apply.TabIndex = 8
         Me.Apply.Text = "Apply"
         Me.Apply.UseVisualStyleBackColor = False
-        '
-        'KrisName
-        '
-        Me.KrisName.Location = New System.Drawing.Point(8, 80)
-        Me.KrisName.Name = "KrisName"
-        Me.KrisName.Size = New System.Drawing.Size(125, 41)
-        Me.KrisName.TabIndex = 9
-        '
-        'Darkcash
-        '
-        Me.Darkcash.Location = New System.Drawing.Point(8, 151)
-        Me.Darkcash.Name = "Darkcash"
-        Me.Darkcash.Size = New System.Drawing.Size(125, 41)
-        Me.Darkcash.TabIndex = 11
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(8, 55)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(56, 24)
-        Me.Label2.TabIndex = 12
-        Me.Label2.Text = "Name"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(8, 124)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 24)
-        Me.Label3.TabIndex = 13
-        Me.Label3.Text = "Kromer"
         '
         'Part1
         '
@@ -245,10 +220,118 @@ Partial Class Form1
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(265, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(487, 85)
+        Me.GroupBox1.Size = New System.Drawing.Size(487, 418)
         Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Party Editor"
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Font = New System.Drawing.Font("Comic Sans MS", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.TabControl1.Location = New System.Drawing.Point(265, 103)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(487, 327)
+        Me.TabControl1.TabIndex = 21
+        '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.Color.Black
+        Me.TabPage2.Controls.Add(Me.TextBox2)
+        Me.TabPage2.Controls.Add(Me.Label8)
+        Me.TabPage2.Controls.Add(Me.TextBox1)
+        Me.TabPage2.Controls.Add(Me.Label7)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 30)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(479, 293)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Kris Stats"
+        '
+        'TabPage1
+        '
+        Me.TabPage1.BackColor = System.Drawing.Color.Black
+        Me.TabPage1.Location = New System.Drawing.Point(4, 30)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(479, 293)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "TabPage1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(12, 65)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(56, 24)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Name"
+        '
+        'KrisName
+        '
+        Me.KrisName.Location = New System.Drawing.Point(12, 90)
+        Me.KrisName.Name = "KrisName"
+        Me.KrisName.Size = New System.Drawing.Size(125, 41)
+        Me.KrisName.TabIndex = 14
+        '
+        'Darkcash
+        '
+        Me.Darkcash.Location = New System.Drawing.Point(12, 161)
+        Me.Darkcash.Name = "Darkcash"
+        Me.Darkcash.Size = New System.Drawing.Size(125, 41)
+        Me.Darkcash.TabIndex = 15
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(12, 134)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(69, 24)
+        Me.Label3.TabIndex = 17
+        Me.Label3.Text = "Kromer"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(3, 12)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(32, 24)
+        Me.Label7.TabIndex = 22
+        Me.Label7.Text = "HP"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(8, 39)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(125, 26)
+        Me.TextBox1.TabIndex = 22
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(8, 100)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(125, 26)
+        Me.TextBox2.TabIndex = 23
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(3, 73)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(71, 24)
+        Me.Label8.TabIndex = 24
+        Me.Label8.Text = "Max HP"
         '
         'Form1
         '
@@ -256,17 +339,18 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 33.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(1082, 493)
+        Me.ClientSize = New System.Drawing.Size(1314, 493)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.KrisName)
+        Me.Controls.Add(Me.Darkcash)
         Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Part3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Part2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Part1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Darkcash)
-        Me.Controls.Add(Me.KrisName)
         Me.Controls.Add(Me.Apply)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.roomchanger)
@@ -282,6 +366,9 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "[[hyperlink blocked]]"
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -293,14 +380,9 @@ Partial Class Form1
     Friend WithEvents Openfile As Button
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Button2 As Button
-    Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents roomchanger As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Apply As Button
-    Friend WithEvents KrisName As TextBox
-    Friend WithEvents Darkcash As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Part1 As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Part2 As ComboBox
@@ -308,4 +390,15 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Part3 As ComboBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents Label2 As Label
+    Friend WithEvents KrisName As TextBox
+    Friend WithEvents Darkcash As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label8 As Label
 End Class
