@@ -34,6 +34,16 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Apply = New System.Windows.Forms.Button()
         Me.KrisName = New System.Windows.Forms.TextBox()
+        Me.Darkcash = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Part1 = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Part2 = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Part3 = New System.Windows.Forms.ComboBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.SuspendLayout()
         '
         'Title
@@ -140,10 +150,105 @@ Partial Class Form1
         '
         'KrisName
         '
-        Me.KrisName.Location = New System.Drawing.Point(8, 58)
+        Me.KrisName.Location = New System.Drawing.Point(8, 80)
         Me.KrisName.Name = "KrisName"
         Me.KrisName.Size = New System.Drawing.Size(125, 41)
         Me.KrisName.TabIndex = 9
+        '
+        'Darkcash
+        '
+        Me.Darkcash.Location = New System.Drawing.Point(8, 151)
+        Me.Darkcash.Name = "Darkcash"
+        Me.Darkcash.Size = New System.Drawing.Size(125, 41)
+        Me.Darkcash.TabIndex = 11
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(8, 55)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(56, 24)
+        Me.Label2.TabIndex = 12
+        Me.Label2.Text = "Name"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(8, 124)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(69, 24)
+        Me.Label3.TabIndex = 13
+        Me.Label3.Text = "Kromer"
+        '
+        'Part1
+        '
+        Me.Part1.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Part1.FormattingEnabled = True
+        Me.Part1.Location = New System.Drawing.Point(164, 127)
+        Me.Part1.Name = "Part1"
+        Me.Part1.Size = New System.Drawing.Size(151, 32)
+        Me.Part1.TabIndex = 14
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(164, 100)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(137, 24)
+        Me.Label4.TabIndex = 15
+        Me.Label4.Text = "Party Member 1"
+        '
+        'Part2
+        '
+        Me.Part2.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Part2.FormattingEnabled = True
+        Me.Part2.Location = New System.Drawing.Point(321, 127)
+        Me.Part2.Name = "Part2"
+        Me.Part2.Size = New System.Drawing.Size(151, 32)
+        Me.Part2.TabIndex = 16
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(321, 100)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(139, 24)
+        Me.Label5.TabIndex = 17
+        Me.Label5.Text = "Party Member 2"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.Location = New System.Drawing.Point(478, 100)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(139, 24)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "Party Member 3"
+        '
+        'Part3
+        '
+        Me.Part3.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Part3.FormattingEnabled = True
+        Me.Part3.Location = New System.Drawing.Point(478, 127)
+        Me.Part3.Name = "Part3"
+        Me.Part3.Size = New System.Drawing.Size(151, 32)
+        Me.Part3.TabIndex = 18
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.Location = New System.Drawing.Point(152, 80)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(487, 85)
+        Me.GroupBox1.TabIndex = 20
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Party Editor"
         '
         'Form1
         '
@@ -152,6 +257,15 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1082, 493)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Part3)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Part2)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Part1)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Darkcash)
         Me.Controls.Add(Me.KrisName)
         Me.Controls.Add(Me.Apply)
         Me.Controls.Add(Me.Label1)
@@ -161,6 +275,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Openfile)
         Me.Controls.Add(Me.darkkrisbox)
         Me.Controls.Add(Me.Title)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ForeColor = System.Drawing.Color.White
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -183,4 +298,14 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Apply As Button
     Friend WithEvents KrisName As TextBox
+    Friend WithEvents Darkcash As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Part1 As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Part2 As ComboBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Part3 As ComboBox
+    Friend WithEvents GroupBox1 As GroupBox
 End Class
