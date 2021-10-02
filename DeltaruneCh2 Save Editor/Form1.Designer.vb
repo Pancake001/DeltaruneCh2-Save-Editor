@@ -186,7 +186,7 @@ Partial Class Form1
         '
         Me.Part1.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Part1.FormattingEnabled = True
-        Me.Part1.Location = New System.Drawing.Point(164, 127)
+        Me.Part1.Location = New System.Drawing.Point(277, 59)
         Me.Part1.Name = "Part1"
         Me.Part1.Size = New System.Drawing.Size(151, 32)
         Me.Part1.TabIndex = 14
@@ -195,7 +195,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(164, 100)
+        Me.Label4.Location = New System.Drawing.Point(277, 32)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(137, 24)
         Me.Label4.TabIndex = 15
@@ -205,7 +205,7 @@ Partial Class Form1
         '
         Me.Part2.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Part2.FormattingEnabled = True
-        Me.Part2.Location = New System.Drawing.Point(321, 127)
+        Me.Part2.Location = New System.Drawing.Point(434, 59)
         Me.Part2.Name = "Part2"
         Me.Part2.Size = New System.Drawing.Size(151, 32)
         Me.Part2.TabIndex = 16
@@ -214,7 +214,7 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(321, 100)
+        Me.Label5.Location = New System.Drawing.Point(434, 32)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(139, 24)
         Me.Label5.TabIndex = 17
@@ -224,7 +224,7 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(478, 100)
+        Me.Label6.Location = New System.Drawing.Point(591, 32)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(139, 24)
         Me.Label6.TabIndex = 19
@@ -234,7 +234,7 @@ Partial Class Form1
         '
         Me.Part3.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Part3.FormattingEnabled = True
-        Me.Part3.Location = New System.Drawing.Point(478, 127)
+        Me.Part3.Location = New System.Drawing.Point(591, 59)
         Me.Part3.Name = "Part3"
         Me.Part3.Size = New System.Drawing.Size(151, 32)
         Me.Part3.TabIndex = 18
@@ -243,7 +243,7 @@ Partial Class Form1
         '
         Me.GroupBox1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(152, 80)
+        Me.GroupBox1.Location = New System.Drawing.Point(265, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(487, 85)
         Me.GroupBox1.TabIndex = 20
