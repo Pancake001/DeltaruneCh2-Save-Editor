@@ -33,6 +33,7 @@ Partial Class Form1
         Me.roomchanger = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Apply = New System.Windows.Forms.Button()
+        Me.KrisName = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Title
@@ -50,7 +51,7 @@ Partial Class Form1
         '
         Me.darkkrisbox.AutoSize = True
         Me.darkkrisbox.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.darkkrisbox.Location = New System.Drawing.Point(10, 69)
+        Me.darkkrisbox.Location = New System.Drawing.Point(13, 373)
         Me.darkkrisbox.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.darkkrisbox.Name = "darkkrisbox"
         Me.darkkrisbox.Size = New System.Drawing.Size(161, 28)
@@ -106,7 +107,7 @@ Partial Class Form1
         '
         'roomchanger
         '
-        Me.roomchanger.Location = New System.Drawing.Point(26, 164)
+        Me.roomchanger.Location = New System.Drawing.Point(12, 440)
         Me.roomchanger.Name = "roomchanger"
         Me.roomchanger.Size = New System.Drawing.Size(125, 41)
         Me.roomchanger.TabIndex = 6
@@ -115,9 +116,10 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(26, 127)
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(8, 404)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(213, 33)
+        Me.Label1.Size = New System.Drawing.Size(151, 24)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Room # (11 - 213)"
         '
@@ -136,6 +138,13 @@ Partial Class Form1
         Me.Apply.Text = "Apply"
         Me.Apply.UseVisualStyleBackColor = False
         '
+        'KrisName
+        '
+        Me.KrisName.Location = New System.Drawing.Point(8, 58)
+        Me.KrisName.Name = "KrisName"
+        Me.KrisName.Size = New System.Drawing.Size(125, 41)
+        Me.KrisName.TabIndex = 9
+        '
         'Form1
         '
         Me.AccessibleRole = System.Windows.Forms.AccessibleRole.None
@@ -143,6 +152,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1082, 493)
+        Me.Controls.Add(Me.KrisName)
         Me.Controls.Add(Me.Apply)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.roomchanger)
@@ -156,7 +166,7 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Deltarune Chapter 2 Save Tool"
+        Me.Text = "[[hyperlink blocked]]"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -172,4 +182,5 @@ Partial Class Form1
     Friend WithEvents roomchanger As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Apply As Button
+    Friend WithEvents KrisName As TextBox
 End Class

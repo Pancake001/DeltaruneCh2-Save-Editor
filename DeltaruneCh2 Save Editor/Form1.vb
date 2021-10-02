@@ -20,12 +20,15 @@ Public Class Form1
             Dim lines() As String = IO.File.ReadAllLines(OpenFileDialog1.FileName)
             ListBox1.Items.AddRange(lines)
 
-            '' Checks if Lightworld kris is on.
-            ''If ListBox1.Items(16) = 1 Then
-            ''darkkrisbox.Checked = True
-            ''Else
-            ''  darkkrisbox.Checked = False
-            ''End If
+            KrisName.Text = ListBox1.Items(0)
+
+
+            ''Checks If Lightworld kris Is on.
+            If ListBox1.Items(15) = 1 Then
+                darkkrisbox.Checked = True
+            Else
+                darkkrisbox.Checked = False
+            End If
 
 
 
@@ -42,12 +45,20 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim SW As IO.StreamWriter = IO.File.CreateText(OpenFileDialog1.FileName)
-        For Each S As String In ListBox1.Items
-            SW.WriteLine(S)
-        Next
-        SW.Close()
 
+
+        Dim answer As DialogResult
+        answer = MessageBox.Show("Are you sure you want to save?", "Are you sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If answer = vbYes Then
+            Dim SW As IO.StreamWriter = IO.File.CreateText(OpenFileDialog1.FileName)
+            For Each S As String In ListBox1.Items
+                SW.WriteLine(S)
+            Next
+            SW.Close()
+        End If
+        If answer = vbNo Then
+
+        End If
     End Sub
 
 
@@ -58,7 +69,7 @@ Public Class Form1
         Dim room As String
         room = roomchanger.Text
         ListBox1.Items(3053) = room
+        ListBox1.Items(0) = KrisName.Text
     End Sub
-
 
 End Class
