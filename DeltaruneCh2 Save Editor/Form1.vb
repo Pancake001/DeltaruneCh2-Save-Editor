@@ -74,11 +74,11 @@ Public Class Form1
             If ListBox1.Items(9) = 4 Then
                 Part3.SelectedItem = "Noelle"
             End If
-
-
-
-
-
+            Krismaxhp.Text = ListBox1.Items(79)
+            Krishp.Text = ListBox1.Items(78)
+            Krisatk.Text = ListBox1.Items(80)
+            Krisdef.Text = ListBox1.Items(81)
+            Krisman.Text = ListBox1.Items(82)
         End If
     End Sub
 
@@ -166,6 +166,11 @@ Public Class Form1
             ListBox1.Items(15) = 0 ''Changes Kris to be in Light World form.
         End If
 
+        ListBox1.Items(79) = Krismaxhp.Text
+        ListBox1.Items(78) = Krishp.Text
+        ListBox1.Items(80) = Krisatk.Text
+        ListBox1.Items(81) = Krisdef.Text
+        ListBox1.Items(82) = Krisman.Text
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
