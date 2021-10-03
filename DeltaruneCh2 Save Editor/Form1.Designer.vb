@@ -41,6 +41,9 @@ Partial Class Form1
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Krisman = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Krisatk = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Krisdef = New System.Windows.Forms.TextBox()
@@ -54,8 +57,8 @@ Partial Class Form1
         Me.KrisName = New System.Windows.Forms.TextBox()
         Me.Darkcash = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Krisman = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Loadbakbutton = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
@@ -236,7 +239,6 @@ Partial Class Form1
         '
         'TabControl1
         '
-        Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Font = New System.Drawing.Font("Comic Sans MS", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
@@ -249,6 +251,7 @@ Partial Class Form1
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.Black
+        Me.TabPage2.Controls.Add(Me.Label17)
         Me.TabPage2.Controls.Add(Me.Krisman)
         Me.TabPage2.Controls.Add(Me.Label10)
         Me.TabPage2.Controls.Add(Me.Krisatk)
@@ -259,18 +262,45 @@ Partial Class Form1
         Me.TabPage2.Controls.Add(Me.Label8)
         Me.TabPage2.Controls.Add(Me.Krismaxhp)
         Me.TabPage2.Controls.Add(Me.Label7)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 30)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 27)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(479, 242)
+        Me.TabPage2.Size = New System.Drawing.Size(479, 245)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Kris Stats"
         '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(0, 224)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(68, 18)
+        Me.Label17.TabIndex = 33
+        Me.Label17.Text = "Kris Stats"
+        '
+        'Krisman
+        '
+        Me.Krisman.Location = New System.Drawing.Point(30, 176)
+        Me.Krisman.Name = "Krisman"
+        Me.Krisman.Size = New System.Drawing.Size(86, 26)
+        Me.Krisman.TabIndex = 31
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(9, 145)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(132, 24)
+        Me.Label10.TabIndex = 32
+        Me.Label10.Text = "Magic (Unused)"
+        '
         'Krisatk
         '
-        Me.Krisatk.Location = New System.Drawing.Point(8, 152)
+        Me.Krisatk.Location = New System.Drawing.Point(8, 111)
         Me.Krisatk.Name = "Krisatk"
-        Me.Krisatk.Size = New System.Drawing.Size(125, 26)
+        Me.Krisatk.Size = New System.Drawing.Size(61, 26)
         Me.Krisatk.TabIndex = 29
         '
         'Label11
@@ -278,7 +308,7 @@ Partial Class Form1
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(8, 125)
+        Me.Label11.Location = New System.Drawing.Point(3, 84)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(66, 24)
         Me.Label11.TabIndex = 30
@@ -286,9 +316,9 @@ Partial Class Form1
         '
         'Krisdef
         '
-        Me.Krisdef.Location = New System.Drawing.Point(8, 209)
+        Me.Krisdef.Location = New System.Drawing.Point(80, 111)
         Me.Krisdef.Name = "Krisdef"
-        Me.Krisdef.Size = New System.Drawing.Size(125, 26)
+        Me.Krisdef.Size = New System.Drawing.Size(61, 26)
         Me.Krisdef.TabIndex = 25
         '
         'Label9
@@ -296,7 +326,7 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(8, 182)
+        Me.Label9.Location = New System.Drawing.Point(75, 84)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(41, 24)
         Me.Label9.TabIndex = 26
@@ -306,7 +336,7 @@ Partial Class Form1
         '
         Me.Krishp.Location = New System.Drawing.Point(8, 44)
         Me.Krishp.Name = "Krishp"
-        Me.Krishp.Size = New System.Drawing.Size(125, 26)
+        Me.Krishp.Size = New System.Drawing.Size(61, 26)
         Me.Krishp.TabIndex = 23
         '
         'Label8
@@ -314,7 +344,7 @@ Partial Class Form1
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(8, 73)
+        Me.Label8.Location = New System.Drawing.Point(74, 17)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(71, 24)
         Me.Label8.TabIndex = 24
@@ -322,9 +352,9 @@ Partial Class Form1
         '
         'Krismaxhp
         '
-        Me.Krismaxhp.Location = New System.Drawing.Point(8, 100)
+        Me.Krismaxhp.Location = New System.Drawing.Point(80, 44)
         Me.Krismaxhp.Name = "Krismaxhp"
-        Me.Krismaxhp.Size = New System.Drawing.Size(125, 26)
+        Me.Krismaxhp.Size = New System.Drawing.Size(61, 26)
         Me.Krismaxhp.TabIndex = 22
         '
         'Label7
@@ -332,7 +362,7 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(3, 12)
+        Me.Label7.Location = New System.Drawing.Point(3, 17)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(32, 24)
         Me.Label7.TabIndex = 22
@@ -341,12 +371,13 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.Black
-        Me.TabPage1.Location = New System.Drawing.Point(4, 30)
+        Me.TabPage1.ForeColor = System.Drawing.Color.White
+        Me.TabPage1.Location = New System.Drawing.Point(4, 27)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(479, 242)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Susie Stats"
+        Me.TabPage1.Size = New System.Drawing.Size(479, 245)
+        Me.TabPage1.TabIndex = 2
+        Me.TabPage1.Text = "TabPage1"
         '
         'Label2
         '
@@ -384,23 +415,35 @@ Partial Class Form1
         Me.Label3.TabIndex = 17
         Me.Label3.Text = "Kromer"
         '
-        'Krisman
+        'Button1
         '
-        Me.Krisman.Location = New System.Drawing.Point(139, 44)
-        Me.Krisman.Name = "Krisman"
-        Me.Krisman.Size = New System.Drawing.Size(125, 26)
-        Me.Krisman.TabIndex = 31
+        Me.Button1.BackColor = System.Drawing.Color.Black
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(1134, 229)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(69, 30)
+        Me.Button1.TabIndex = 22
+        Me.Button1.Text = "Lancer"
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'Label10
+        'Loadbakbutton
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(139, 17)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(56, 24)
-        Me.Label10.TabIndex = 32
-        Me.Label10.Text = "Magic"
+        Me.Loadbakbutton.BackColor = System.Drawing.Color.Black
+        Me.Loadbakbutton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Loadbakbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Loadbakbutton.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Loadbakbutton.ForeColor = System.Drawing.Color.White
+        Me.Loadbakbutton.Location = New System.Drawing.Point(745, 451)
+        Me.Loadbakbutton.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Loadbakbutton.Name = "Loadbakbutton"
+        Me.Loadbakbutton.Size = New System.Drawing.Size(112, 30)
+        Me.Loadbakbutton.TabIndex = 23
+        Me.Loadbakbutton.Text = "Load Backup"
+        Me.Loadbakbutton.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -408,7 +451,9 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 33.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(1314, 493)
+        Me.ClientSize = New System.Drawing.Size(1082, 493)
+        Me.Controls.Add(Me.Loadbakbutton)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.KrisName)
@@ -460,7 +505,6 @@ Partial Class Form1
     Friend WithEvents Part3 As ComboBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Label2 As Label
     Friend WithEvents KrisName As TextBox
@@ -476,4 +520,8 @@ Partial Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents Krisman As TextBox
     Friend WithEvents Label10 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents Loadbakbutton As Button
 End Class
