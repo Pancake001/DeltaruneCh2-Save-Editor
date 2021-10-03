@@ -1,4 +1,4 @@
-# DeltaruneCh2-Save-Editor
+# [[hyperlink blocked]]
 
 This is a tool I am making to make it easier to edit Deltarune Save Files. <br>
 People want me to name it "[[hyperlink blocked]]" <br>
