@@ -33,6 +33,32 @@ Public Class Form1
             Susiedef.Text = ListBox1.Items(143)
             Susieman.Text = ListBox1.Items(144) ''im
 
+            Ralshp.Text = ListBox1.Items(202) ''im
+            Ralsmaxhp.Text = ListBox1.Items(203)
+            Ralsatk.Text = ListBox1.Items(204)  ''stats fhaij
+            Ralsdef.Text = ListBox1.Items(205)
+            Ralsman.Text = ListBox1.Items(206) ''im
+
+
+
+
+
+            roomchanger.Text = ListBox1.Items(3053)
+
+
+            If ListBox1.Items(806) = 1 Then '' Checks if Starwalk box is on.
+                Starwalk.Checked = True
+            Else
+                Starwalk.Checked = False
+            End If
+
+            ''bed inspect
+            If ListBox1.Items(804) = 1 Then '' Checks if Starwalk box is on.
+                Bedinsp.Checked = True
+            Else
+                Bedinsp.Checked = False
+            End If
+
 
             ''Checks If Lightworld kris Is on.
             If ListBox1.Items(15) = 1 Then
@@ -126,69 +152,85 @@ Public Class Form1
 
 
         If roomchanger.Text = "" Then               ''Puts everything into the list box.
-                roomchanger.Text = "11"
-            End If ''h
-            Dim room As String
-            room = roomchanger.Text
-            ListBox1.Items(3053) = room
-            ListBox1.Items(0) = KrisName.Text
-            ListBox1.Items(10) = Darkcash.Text
-            If Part1.SelectedItem = "Kris" Then
-                ListBox1.Items(7) = 1
-            End If
-            If Part1.SelectedItem = "Susie" Then
-                ListBox1.Items(7) = 2
-            End If
-            If Part1.SelectedItem = "Ralsei" Then
-                ListBox1.Items(7) = 3
-            End If
-            If Part1.SelectedItem = "Noelle" Then
-                ListBox1.Items(7) = 4
-            End If
-            If Part1.SelectedItem = "None" Then
-                ListBox1.Items(7) = 0
-            End If
-            If Part2.SelectedItem = "None" Then
-                ListBox1.Items(8) = 0
-            End If
-            If Part3.SelectedItem = "None" Then
-                ListBox1.Items(9) = 0
-            End If
-            If Part2.SelectedItem = "Kris" Then
-                ListBox1.Items(8) = 1
-            End If
-            If Part2.SelectedItem = "Susie" Then
-                ListBox1.Items(8) = 2
-            End If
-            If Part2.SelectedItem = "Ralsei" Then
-                ListBox1.Items(8) = 3
-            End If
-            If Part2.SelectedItem = "Noelle" Then
-                ListBox1.Items(8) = 4
-            End If
-            If Part3.SelectedItem = "Kris" Then
-                ListBox1.Items(9) = 1
-            End If
-            If Part3.SelectedItem = "Susie" Then
-                ListBox1.Items(9) = 2
-            End If
-            If Part3.SelectedItem = "Ralsei" Then
-                ListBox1.Items(9) = 3
-            End If
-            If Part3.SelectedItem = "Noelle" Then
-                ListBox1.Items(9) = 4
-            End If
+            roomchanger.Text = "11"
+        End If ''h
+        Dim room As String
+        room = roomchanger.Text
+        ListBox1.Items(3053) = room
+        ListBox1.Items(0) = KrisName.Text
+        ListBox1.Items(10) = Darkcash.Text
+        If Part1.SelectedItem = "Kris" Then
+            ListBox1.Items(7) = 1
+        End If
+        If Part1.SelectedItem = "Susie" Then
+            ListBox1.Items(7) = 2
+        End If
+        If Part1.SelectedItem = "Ralsei" Then
+            ListBox1.Items(7) = 3
+        End If
+        If Part1.SelectedItem = "Noelle" Then
+            ListBox1.Items(7) = 4
+        End If
+        If Part1.SelectedItem = "None" Then
+            ListBox1.Items(7) = 0
+        End If
+        If Part2.SelectedItem = "None" Then
+            ListBox1.Items(8) = 0
+        End If
+        If Part3.SelectedItem = "None" Then
+            ListBox1.Items(9) = 0
+        End If
+        If Part2.SelectedItem = "Kris" Then
+            ListBox1.Items(8) = 1
+        End If
+        If Part2.SelectedItem = "Susie" Then
+            ListBox1.Items(8) = 2
+        End If
+        If Part2.SelectedItem = "Ralsei" Then
+            ListBox1.Items(8) = 3
+        End If
+        If Part2.SelectedItem = "Noelle" Then
+            ListBox1.Items(8) = 4
+        End If
+        If Part3.SelectedItem = "Kris" Then
+            ListBox1.Items(9) = 1
+        End If
+        If Part3.SelectedItem = "Susie" Then
+            ListBox1.Items(9) = 2
+        End If
+        If Part3.SelectedItem = "Ralsei" Then
+            ListBox1.Items(9) = 3
+        End If
+        If Part3.SelectedItem = "Noelle" Then
+            ListBox1.Items(9) = 4
+        End If
 
-            If darkkrisbox.Checked = True Then
-                ListBox1.Items(15) = 1 ''Changes Kris to be in Dark World form.
-            End If
-            If darkkrisbox.Checked = False Then
-                ListBox1.Items(15) = 0 ''Changes Kris to be in Light World form.
-            End If
-            ListBox1.Items(79) = Krismaxhp.Text
-            ListBox1.Items(78) = Krishp.Text
-            ListBox1.Items(80) = Krisatk.Text
-            ListBox1.Items(81) = Krisdef.Text
+        If darkkrisbox.Checked = True Then
+            ListBox1.Items(15) = 1 ''Changes Kris to be in Dark World form.
+        End If
+        If darkkrisbox.Checked = False Then
+            ListBox1.Items(15) = 0 ''Changes Kris to be in Light World form.
+        End If
+
+        If Starwalk.Checked = True Then
+            ListBox1.Items(806) = 1 '' Talked to Starwalker
+        End If
+        If Starwalk.Checked = False Then
+            ListBox1.Items(806) = 0 ''
+        End If
+
+        If Bedinsp.Checked = True Then
+            ListBox1.Items(804) = 1 '' Bed Inspector
+        End If
+        If Bedinsp.Checked = False Then
+            ListBox1.Items(804) = 0 ''
+        End If
+
+
+        ListBox1.Items(79) = Krismaxhp.Text
+        ListBox1.Items(78) = Krishp.Text
+        ListBox1.Items(80) = Krisatk.Text
+        ListBox1.Items(81) = Krisdef.Text
         ListBox1.Items(82) = Krisman.Text
 
         ''im22222
@@ -198,7 +240,11 @@ Public Class Form1
         ListBox1.Items(143) = Susiedef.Text
         ListBox1.Items(144) = Susieman.Text
 
-
+        ListBox1.Items(202) = Ralshp.Text
+        ListBox1.Items(203) = Ralsmaxhp.Text
+        ListBox1.Items(204) = Ralsatk.Text
+        ListBox1.Items(205) = Ralsdef.Text
+        ListBox1.Items(206) = Ralsman.Text
 
         ''End If
     End Sub
@@ -226,7 +272,11 @@ Public Class Form1
         '' Loads backup. I will implement this later lol
     End Sub
 
-    Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
+    Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles Starwalk.CheckedChanged
 
     End Sub
 
