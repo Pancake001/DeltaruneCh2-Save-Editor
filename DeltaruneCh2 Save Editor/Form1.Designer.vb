@@ -53,6 +53,17 @@ Partial Class Form1
         Me.Krismaxhp = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Susieman = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Susiemaxhp = New System.Windows.Forms.TextBox()
+        Me.Susieatk = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Susiehp = New System.Windows.Forms.TextBox()
+        Me.Susiedef = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.KrisName = New System.Windows.Forms.TextBox()
         Me.Darkcash = New System.Windows.Forms.TextBox()
@@ -61,6 +72,7 @@ Partial Class Form1
         Me.Loadbakbutton = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Title
@@ -169,7 +181,6 @@ Partial Class Form1
         '
         'Part1
         '
-        Me.Part1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Part1.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Part1.FormattingEnabled = True
         Me.Part1.Location = New System.Drawing.Point(277, 59)
@@ -189,7 +200,6 @@ Partial Class Form1
         '
         'Part2
         '
-        Me.Part2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Part2.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Part2.FormattingEnabled = True
         Me.Part2.Location = New System.Drawing.Point(434, 59)
@@ -219,7 +229,6 @@ Partial Class Form1
         '
         'Part3
         '
-        Me.Part3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Part3.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Part3.FormattingEnabled = True
         Me.Part3.Location = New System.Drawing.Point(591, 59)
@@ -241,6 +250,7 @@ Partial Class Form1
         '
         'TabControl1
         '
+        Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Font = New System.Drawing.Font("Comic Sans MS", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
@@ -264,10 +274,10 @@ Partial Class Form1
         Me.TabPage2.Controls.Add(Me.Label8)
         Me.TabPage2.Controls.Add(Me.Krismaxhp)
         Me.TabPage2.Controls.Add(Me.Label7)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 27)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 30)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(479, 245)
+        Me.TabPage2.Size = New System.Drawing.Size(479, 242)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Kris Stats"
         '
@@ -373,13 +383,123 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.Black
+        Me.TabPage1.Controls.Add(Me.Label12)
+        Me.TabPage1.Controls.Add(Me.Susieman)
+        Me.TabPage1.Controls.Add(Me.Label18)
+        Me.TabPage1.Controls.Add(Me.Label13)
+        Me.TabPage1.Controls.Add(Me.Susiemaxhp)
+        Me.TabPage1.Controls.Add(Me.Susieatk)
+        Me.TabPage1.Controls.Add(Me.Label16)
+        Me.TabPage1.Controls.Add(Me.Label14)
+        Me.TabPage1.Controls.Add(Me.Susiehp)
+        Me.TabPage1.Controls.Add(Me.Susiedef)
+        Me.TabPage1.Controls.Add(Me.Label15)
         Me.TabPage1.ForeColor = System.Drawing.Color.White
-        Me.TabPage1.Location = New System.Drawing.Point(4, 27)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 30)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(479, 245)
+        Me.TabPage1.Size = New System.Drawing.Size(479, 242)
         Me.TabPage1.TabIndex = 2
-        Me.TabPage1.Text = "TabPage1"
+        Me.TabPage1.Text = "Susie Stats"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(2, 224)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(68, 18)
+        Me.Label12.TabIndex = 44
+        Me.Label12.Text = "Kris Stats"
+        '
+        'Susieman
+        '
+        Me.Susieman.Location = New System.Drawing.Point(32, 176)
+        Me.Susieman.Name = "Susieman"
+        Me.Susieman.Size = New System.Drawing.Size(86, 26)
+        Me.Susieman.TabIndex = 42
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label18.ForeColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(5, 17)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(32, 24)
+        Me.Label18.TabIndex = 35
+        Me.Label18.Text = "HP"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(47, 149)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(56, 24)
+        Me.Label13.TabIndex = 43
+        Me.Label13.Text = "Magic"
+        '
+        'Susiemaxhp
+        '
+        Me.Susiemaxhp.Location = New System.Drawing.Point(82, 44)
+        Me.Susiemaxhp.Name = "Susiemaxhp"
+        Me.Susiemaxhp.Size = New System.Drawing.Size(61, 26)
+        Me.Susiemaxhp.TabIndex = 34
+        '
+        'Susieatk
+        '
+        Me.Susieatk.Location = New System.Drawing.Point(10, 111)
+        Me.Susieatk.Name = "Susieatk"
+        Me.Susieatk.Size = New System.Drawing.Size(61, 26)
+        Me.Susieatk.TabIndex = 40
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(76, 17)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(71, 24)
+        Me.Label16.TabIndex = 37
+        Me.Label16.Text = "Max HP"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label14.ForeColor = System.Drawing.Color.White
+        Me.Label14.Location = New System.Drawing.Point(5, 84)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(66, 24)
+        Me.Label14.TabIndex = 41
+        Me.Label14.Text = "Attack"
+        '
+        'Susiehp
+        '
+        Me.Susiehp.Location = New System.Drawing.Point(10, 44)
+        Me.Susiehp.Name = "Susiehp"
+        Me.Susiehp.Size = New System.Drawing.Size(61, 26)
+        Me.Susiehp.TabIndex = 36
+        '
+        'Susiedef
+        '
+        Me.Susiedef.Location = New System.Drawing.Point(82, 111)
+        Me.Susiedef.Name = "Susiedef"
+        Me.Susiedef.Size = New System.Drawing.Size(61, 26)
+        Me.Susiedef.TabIndex = 38
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(77, 84)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(41, 24)
+        Me.Label15.TabIndex = 39
+        Me.Label15.Text = "Def"
         '
         'Label2
         '
@@ -485,6 +605,8 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -526,4 +648,15 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents Loadbakbutton As Button
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Susieman As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Susiemaxhp As TextBox
+    Friend WithEvents Susieatk As TextBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Susiehp As TextBox
+    Friend WithEvents Susiedef As TextBox
+    Friend WithEvents Label15 As Label
 End Class

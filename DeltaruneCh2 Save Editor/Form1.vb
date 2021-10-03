@@ -26,6 +26,14 @@ Public Class Form1
             Krisatk.Text = ListBox1.Items(80)   ''When you open it.
             Krisdef.Text = ListBox1.Items(81)
             Krisman.Text = ListBox1.Items(82)
+
+            Susiehp.Text = ListBox1.Items(140) ''im
+            Susiemaxhp.Text = ListBox1.Items(141)
+            Susieatk.Text = ListBox1.Items(142)
+            Susiedef.Text = ListBox1.Items(143)
+            Susieman.Text = ListBox1.Items(144) ''im
+
+
             ''Checks If Lightworld kris Is on.
             If ListBox1.Items(15) = 1 Then
                 darkkrisbox.Checked = True
@@ -181,7 +189,17 @@ Public Class Form1
             ListBox1.Items(78) = Krishp.Text
             ListBox1.Items(80) = Krisatk.Text
             ListBox1.Items(81) = Krisdef.Text
-            ListBox1.Items(82) = Krisman.Text
+        ListBox1.Items(82) = Krisman.Text
+
+        ''im22222
+        ListBox1.Items(140) = Susiehp.Text
+        ListBox1.Items(141) = Susiemaxhp.Text
+        ListBox1.Items(142) = Susieatk.Text
+        ListBox1.Items(143) = Susiedef.Text
+        ListBox1.Items(144) = Susieman.Text
+
+
+
         ''End If
     End Sub
 
@@ -206,6 +224,10 @@ Public Class Form1
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Loadbakbutton.Click
         '' Loads backup. I will implement this later lol
+    End Sub
+
+    Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
+
     End Sub
 
 
