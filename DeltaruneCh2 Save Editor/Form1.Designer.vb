@@ -77,6 +77,7 @@ Partial Class Form1
         'darkkrisbox
         '
         Me.darkkrisbox.AutoSize = True
+        Me.darkkrisbox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.darkkrisbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.darkkrisbox.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.darkkrisbox.Location = New System.Drawing.Point(8, 382)
@@ -228,6 +229,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(265, 12)
@@ -433,7 +435,7 @@ Partial Class Form1
         'Loadbakbutton
         '
         Me.Loadbakbutton.BackColor = System.Drawing.Color.Black
-        Me.Loadbakbutton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Loadbakbutton.Cursor = System.Windows.Forms.Cursors.No
         Me.Loadbakbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Loadbakbutton.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Loadbakbutton.ForeColor = System.Drawing.Color.White

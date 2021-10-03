@@ -81,7 +81,7 @@ Public Class Form1
 
         Dim Tempfol As String = My.Computer.FileSystem.SpecialDirectories.Temp
 
-        Dim bakpat As String = (Tempfol + "\delsavebak.txt") ''Creates backup of the file.
+        Dim bakpat As String = (Tempfol + "\DeltaruneSaveBackup") ''Creates backup of the file.
 
         File.Create(bakpat).Dispose()
 
