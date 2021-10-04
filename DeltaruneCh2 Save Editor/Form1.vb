@@ -39,7 +39,11 @@ Public Class Form1
             Ralsdef.Text = ListBox1.Items(205)
             Ralsman.Text = ListBox1.Items(206) ''im
 
-
+            Noehp.Text = ListBox1.Items(264) ''im
+            Noemaxhp.Text = ListBox1.Items(265)
+            Noeatk.Text = ListBox1.Items(266)  ''stats fhaij
+            Noedef.Text = ListBox1.Items(267)
+            Noeman.Text = ListBox1.Items(268)
 
 
 
@@ -246,6 +250,12 @@ Public Class Form1
         ListBox1.Items(205) = Ralsdef.Text
         ListBox1.Items(206) = Ralsman.Text
 
+        ListBox1.Items(264) = Noehp.Text
+        ListBox1.Items(265) = Noemaxhp.Text
+        ListBox1.Items(266) = Noeatk.Text
+        ListBox1.Items(267) = Noedef.Text
+        ListBox1.Items(268) = Noeman.Text
+
         ''End If
     End Sub
 
@@ -270,14 +280,6 @@ Public Class Form1
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Loadbakbutton.Click
         '' Loads backup. I will implement this later lol
-    End Sub
-
-    Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles Starwalk.CheckedChanged
-
     End Sub
 
 

@@ -71,6 +71,18 @@ Partial Class Form1
         Me.Ralshp = New System.Windows.Forms.TextBox()
         Me.Ralsdef = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Noeman = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Noeatk = New System.Windows.Forms.TextBox()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Noedef = New System.Windows.Forms.TextBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Noehp = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Noemaxhp = New System.Windows.Forms.TextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
         Me.KrisName = New System.Windows.Forms.TextBox()
         Me.darkkrisbox = New System.Windows.Forms.CheckBox()
         Me.Darkcash = New System.Windows.Forms.TextBox()
@@ -95,6 +107,7 @@ Partial Class Form1
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         Me.TabPage5.SuspendLayout()
+        Me.TabPage8.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -254,6 +267,7 @@ Partial Class Form1
         Me.TabControl2.Controls.Add(Me.TabPage3)
         Me.TabControl2.Controls.Add(Me.TabPage4)
         Me.TabControl2.Controls.Add(Me.TabPage5)
+        Me.TabControl2.Controls.Add(Me.TabPage8)
         Me.TabControl2.Font = New System.Drawing.Font("Comic Sans MS", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TabControl2.Location = New System.Drawing.Point(285, 106)
         Me.TabControl2.Name = "TabControl2"
@@ -622,6 +636,126 @@ Partial Class Form1
         Me.Label24.TabIndex = 50
         Me.Label24.Text = "Def"
         '
+        'TabPage8
+        '
+        Me.TabPage8.BackColor = System.Drawing.Color.Black
+        Me.TabPage8.Controls.Add(Me.Label25)
+        Me.TabPage8.Controls.Add(Me.Noeman)
+        Me.TabPage8.Controls.Add(Me.Label26)
+        Me.TabPage8.Controls.Add(Me.Noeatk)
+        Me.TabPage8.Controls.Add(Me.Label27)
+        Me.TabPage8.Controls.Add(Me.Noedef)
+        Me.TabPage8.Controls.Add(Me.Label28)
+        Me.TabPage8.Controls.Add(Me.Noehp)
+        Me.TabPage8.Controls.Add(Me.Label29)
+        Me.TabPage8.Controls.Add(Me.Noemaxhp)
+        Me.TabPage8.Controls.Add(Me.Label30)
+        Me.TabPage8.Location = New System.Drawing.Point(4, 30)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage8.Size = New System.Drawing.Size(479, 242)
+        Me.TabPage8.TabIndex = 4
+        Me.TabPage8.Text = "Noelle Stats"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(0, 225)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(83, 18)
+        Me.Label25.TabIndex = 44
+        Me.Label25.Text = "Noelle Stats"
+        '
+        'Noeman
+        '
+        Me.Noeman.Location = New System.Drawing.Point(27, 174)
+        Me.Noeman.Name = "Noeman"
+        Me.Noeman.Size = New System.Drawing.Size(86, 26)
+        Me.Noeman.TabIndex = 42
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label26.ForeColor = System.Drawing.Color.White
+        Me.Label26.Location = New System.Drawing.Point(9, 146)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(56, 24)
+        Me.Label26.TabIndex = 43
+        Me.Label26.Text = "Magic"
+        '
+        'Noeatk
+        '
+        Me.Noeatk.Location = New System.Drawing.Point(5, 109)
+        Me.Noeatk.Name = "Noeatk"
+        Me.Noeatk.Size = New System.Drawing.Size(61, 26)
+        Me.Noeatk.TabIndex = 40
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label27.ForeColor = System.Drawing.Color.White
+        Me.Label27.Location = New System.Drawing.Point(3, 85)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(66, 24)
+        Me.Label27.TabIndex = 41
+        Me.Label27.Text = "Attack"
+        '
+        'Noedef
+        '
+        Me.Noedef.Location = New System.Drawing.Point(77, 109)
+        Me.Noedef.Name = "Noedef"
+        Me.Noedef.Size = New System.Drawing.Size(61, 26)
+        Me.Noedef.TabIndex = 38
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label28.ForeColor = System.Drawing.Color.White
+        Me.Label28.Location = New System.Drawing.Point(75, 85)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(41, 24)
+        Me.Label28.TabIndex = 39
+        Me.Label28.Text = "Def"
+        '
+        'Noehp
+        '
+        Me.Noehp.Location = New System.Drawing.Point(5, 42)
+        Me.Noehp.Name = "Noehp"
+        Me.Noehp.Size = New System.Drawing.Size(61, 26)
+        Me.Noehp.TabIndex = 36
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label29.ForeColor = System.Drawing.Color.White
+        Me.Label29.Location = New System.Drawing.Point(74, 18)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(71, 24)
+        Me.Label29.TabIndex = 37
+        Me.Label29.Text = "Max HP"
+        '
+        'Noemaxhp
+        '
+        Me.Noemaxhp.Location = New System.Drawing.Point(77, 42)
+        Me.Noemaxhp.Name = "Noemaxhp"
+        Me.Noemaxhp.Size = New System.Drawing.Size(61, 26)
+        Me.Noemaxhp.TabIndex = 34
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label30.ForeColor = System.Drawing.Color.White
+        Me.Label30.Location = New System.Drawing.Point(3, 18)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(32, 24)
+        Me.Label30.TabIndex = 35
+        Me.Label30.Text = "HP"
+        '
         'KrisName
         '
         Me.KrisName.Location = New System.Drawing.Point(15, 35)
@@ -839,6 +973,8 @@ Partial Class Form1
         Me.TabPage4.PerformLayout()
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
+        Me.TabPage8.ResumeLayout(False)
+        Me.TabPage8.PerformLayout()
         Me.TabPage6.ResumeLayout(False)
         Me.TabPage6.PerformLayout()
         Me.ResumeLayout(False)
@@ -912,4 +1048,16 @@ Partial Class Form1
     Friend WithEvents Ralshp As TextBox
     Friend WithEvents Ralsdef As TextBox
     Friend WithEvents Label24 As Label
+    Friend WithEvents TabPage8 As TabPage
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Noeman As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Noeatk As TextBox
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Noedef As TextBox
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Noehp As TextBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Noemaxhp As TextBox
+    Friend WithEvents Label30 As Label
 End Class
