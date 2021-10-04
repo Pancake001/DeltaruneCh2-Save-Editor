@@ -45,6 +45,14 @@ Public Class Form1
             Noedef.Text = ListBox1.Items(267)
             Noeman.Text = ListBox1.Items(268)
 
+            Lhp.Text = ListBox1.Items(530) ''im
+            Lmaxhp.Text = ListBox1.Items(531)
+            Latk.Text = ListBox1.Items(532)  ''stats fhaij
+            Ldef.Text = ListBox1.Items(533)
+            Lexp.Text = ListBox1.Items(527)
+            Lcash.Text = ListBox1.Items(529)
+            Llvl.Text = ListBox1.Items(528)
+
 
 
             roomchanger.Text = ListBox1.Items(3053)
@@ -255,6 +263,15 @@ Public Class Form1
         ListBox1.Items(266) = Noeatk.Text
         ListBox1.Items(267) = Noedef.Text
         ListBox1.Items(268) = Noeman.Text
+
+        ListBox1.Items(530) = Lhp.Text ''im
+        ListBox1.Items(531) = Lmaxhp.Text
+        ListBox1.Items(532) = Latk.Text ''stats fhaij
+        ListBox1.Items(533) = Ldef.Text
+        ListBox1.Items(527) = Lexp.Text
+        ListBox1.Items(529) = Lcash.Text
+        ListBox1.Items(528) = Llvl.Text
+
 
         ''End If
     End Sub

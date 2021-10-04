@@ -83,6 +83,22 @@ Partial Class Form1
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Noemaxhp = New System.Windows.Forms.TextBox()
         Me.Label30 = New System.Windows.Forms.Label()
+        Me.TabPage9 = New System.Windows.Forms.TabPage()
+        Me.Lexp = New System.Windows.Forms.TextBox()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Llvl = New System.Windows.Forms.TextBox()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.Lcash = New System.Windows.Forms.TextBox()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.Lmaxhp = New System.Windows.Forms.TextBox()
+        Me.Latk = New System.Windows.Forms.TextBox()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Lhp = New System.Windows.Forms.TextBox()
+        Me.Ldef = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
         Me.KrisName = New System.Windows.Forms.TextBox()
         Me.darkkrisbox = New System.Windows.Forms.CheckBox()
         Me.Darkcash = New System.Windows.Forms.TextBox()
@@ -108,6 +124,7 @@ Partial Class Form1
         Me.TabPage4.SuspendLayout()
         Me.TabPage5.SuspendLayout()
         Me.TabPage8.SuspendLayout()
+        Me.TabPage9.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -115,7 +132,7 @@ Partial Class Form1
         '
         Me.Title.AutoSize = True
         Me.Title.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Title.Location = New System.Drawing.Point(-1, -3)
+        Me.Title.Location = New System.Drawing.Point(149, -3)
         Me.Title.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Title.Name = "Title"
         Me.Title.Size = New System.Drawing.Size(259, 24)
@@ -133,7 +150,7 @@ Partial Class Form1
         Me.Openfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Openfile.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Openfile.ForeColor = System.Drawing.Color.White
-        Me.Openfile.Location = New System.Drawing.Point(917, 393)
+        Me.Openfile.Location = New System.Drawing.Point(-1, -3)
         Me.Openfile.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Openfile.Name = "Openfile"
         Me.Openfile.Size = New System.Drawing.Size(151, 30)
@@ -268,6 +285,7 @@ Partial Class Form1
         Me.TabControl2.Controls.Add(Me.TabPage4)
         Me.TabControl2.Controls.Add(Me.TabPage5)
         Me.TabControl2.Controls.Add(Me.TabPage8)
+        Me.TabControl2.Controls.Add(Me.TabPage9)
         Me.TabControl2.Font = New System.Drawing.Font("Comic Sans MS", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TabControl2.Location = New System.Drawing.Point(285, 106)
         Me.TabControl2.Name = "TabControl2"
@@ -756,6 +774,166 @@ Partial Class Form1
         Me.Label30.TabIndex = 35
         Me.Label30.Text = "HP"
         '
+        'TabPage9
+        '
+        Me.TabPage9.BackColor = System.Drawing.Color.Black
+        Me.TabPage9.Controls.Add(Me.Lexp)
+        Me.TabPage9.Controls.Add(Me.Label38)
+        Me.TabPage9.Controls.Add(Me.Llvl)
+        Me.TabPage9.Controls.Add(Me.Label37)
+        Me.TabPage9.Controls.Add(Me.Lcash)
+        Me.TabPage9.Controls.Add(Me.Label32)
+        Me.TabPage9.Controls.Add(Me.Label31)
+        Me.TabPage9.Controls.Add(Me.Label36)
+        Me.TabPage9.Controls.Add(Me.Lmaxhp)
+        Me.TabPage9.Controls.Add(Me.Latk)
+        Me.TabPage9.Controls.Add(Me.Label35)
+        Me.TabPage9.Controls.Add(Me.Label33)
+        Me.TabPage9.Controls.Add(Me.Lhp)
+        Me.TabPage9.Controls.Add(Me.Ldef)
+        Me.TabPage9.Controls.Add(Me.Label34)
+        Me.TabPage9.Location = New System.Drawing.Point(4, 30)
+        Me.TabPage9.Name = "TabPage9"
+        Me.TabPage9.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage9.Size = New System.Drawing.Size(479, 242)
+        Me.TabPage9.TabIndex = 5
+        Me.TabPage9.Text = "Light Kris Stats"
+        '
+        'Lexp
+        '
+        Me.Lexp.Location = New System.Drawing.Point(154, 41)
+        Me.Lexp.Name = "Lexp"
+        Me.Lexp.Size = New System.Drawing.Size(61, 26)
+        Me.Lexp.TabIndex = 55
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label38.ForeColor = System.Drawing.Color.White
+        Me.Label38.Location = New System.Drawing.Point(154, 14)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(42, 24)
+        Me.Label38.TabIndex = 56
+        Me.Label38.Text = "EXP"
+        '
+        'Llvl
+        '
+        Me.Llvl.Location = New System.Drawing.Point(80, 171)
+        Me.Llvl.Name = "Llvl"
+        Me.Llvl.Size = New System.Drawing.Size(61, 26)
+        Me.Llvl.TabIndex = 53
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label37.ForeColor = System.Drawing.Color.White
+        Me.Label37.Location = New System.Drawing.Point(78, 147)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(52, 24)
+        Me.Label37.TabIndex = 54
+        Me.Label37.Text = "Level"
+        '
+        'Lcash
+        '
+        Me.Lcash.Location = New System.Drawing.Point(8, 171)
+        Me.Lcash.Name = "Lcash"
+        Me.Lcash.Size = New System.Drawing.Size(61, 26)
+        Me.Lcash.TabIndex = 51
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label32.ForeColor = System.Drawing.Color.White
+        Me.Label32.Location = New System.Drawing.Point(6, 147)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(46, 24)
+        Me.Label32.TabIndex = 52
+        Me.Label32.Text = "Cash"
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(3, 224)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(144, 18)
+        Me.Label31.TabIndex = 50
+        Me.Label31.Text = "Light World Kris Stats"
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label36.ForeColor = System.Drawing.Color.White
+        Me.Label36.Location = New System.Drawing.Point(6, 17)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(32, 24)
+        Me.Label36.TabIndex = 41
+        Me.Label36.Text = "HP"
+        '
+        'Lmaxhp
+        '
+        Me.Lmaxhp.Location = New System.Drawing.Point(80, 41)
+        Me.Lmaxhp.Name = "Lmaxhp"
+        Me.Lmaxhp.Size = New System.Drawing.Size(61, 26)
+        Me.Lmaxhp.TabIndex = 40
+        '
+        'Latk
+        '
+        Me.Latk.Location = New System.Drawing.Point(8, 108)
+        Me.Latk.Name = "Latk"
+        Me.Latk.Size = New System.Drawing.Size(61, 26)
+        Me.Latk.TabIndex = 46
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label35.ForeColor = System.Drawing.Color.White
+        Me.Label35.Location = New System.Drawing.Point(77, 17)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(71, 24)
+        Me.Label35.TabIndex = 43
+        Me.Label35.Text = "Max HP"
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label33.ForeColor = System.Drawing.Color.White
+        Me.Label33.Location = New System.Drawing.Point(6, 84)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(66, 24)
+        Me.Label33.TabIndex = 47
+        Me.Label33.Text = "Attack"
+        '
+        'Lhp
+        '
+        Me.Lhp.Location = New System.Drawing.Point(8, 41)
+        Me.Lhp.Name = "Lhp"
+        Me.Lhp.Size = New System.Drawing.Size(61, 26)
+        Me.Lhp.TabIndex = 42
+        '
+        'Ldef
+        '
+        Me.Ldef.Location = New System.Drawing.Point(80, 108)
+        Me.Ldef.Name = "Ldef"
+        Me.Ldef.Size = New System.Drawing.Size(61, 26)
+        Me.Ldef.TabIndex = 44
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label34.ForeColor = System.Drawing.Color.White
+        Me.Label34.Location = New System.Drawing.Point(78, 84)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(41, 24)
+        Me.Label34.TabIndex = 45
+        Me.Label34.Text = "Def"
+        '
         'KrisName
         '
         Me.KrisName.Location = New System.Drawing.Point(15, 35)
@@ -975,6 +1153,8 @@ Partial Class Form1
         Me.TabPage5.PerformLayout()
         Me.TabPage8.ResumeLayout(False)
         Me.TabPage8.PerformLayout()
+        Me.TabPage9.ResumeLayout(False)
+        Me.TabPage9.PerformLayout()
         Me.TabPage6.ResumeLayout(False)
         Me.TabPage6.PerformLayout()
         Me.ResumeLayout(False)
@@ -1060,4 +1240,20 @@ Partial Class Form1
     Friend WithEvents Label29 As Label
     Friend WithEvents Noemaxhp As TextBox
     Friend WithEvents Label30 As Label
+    Friend WithEvents TabPage9 As TabPage
+    Friend WithEvents Lexp As TextBox
+    Friend WithEvents Label38 As Label
+    Friend WithEvents Llvl As TextBox
+    Friend WithEvents Label37 As Label
+    Friend WithEvents Lcash As TextBox
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label36 As Label
+    Friend WithEvents Lmaxhp As TextBox
+    Friend WithEvents Latk As TextBox
+    Friend WithEvents Label35 As Label
+    Friend WithEvents Label33 As Label
+    Friend WithEvents Lhp As TextBox
+    Friend WithEvents Ldef As TextBox
+    Friend WithEvents Label34 As Label
 End Class
