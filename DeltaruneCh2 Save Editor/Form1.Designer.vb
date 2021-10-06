@@ -112,11 +112,13 @@ Partial Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Part2 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.Bedinsp = New System.Windows.Forms.CheckBox()
         Me.Starwalk = New System.Windows.Forms.CheckBox()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Gonhead = New System.Windows.Forms.ComboBox()
+        Me.Label39 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabControl2.SuspendLayout()
@@ -126,6 +128,7 @@ Partial Class Form1
         Me.TabPage8.SuspendLayout()
         Me.TabPage9.SuspendLayout()
         Me.TabPage6.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Title
@@ -233,9 +236,9 @@ Partial Class Form1
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage6)
         Me.TabControl1.Controls.Add(Me.TabPage7)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Location = New System.Drawing.Point(-1, 24)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -1059,16 +1062,6 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Party Editor"
         '
-        'TabPage2
-        '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 42)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(853, 432)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Equipment and Items"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
         'TabPage6
         '
         Me.TabPage6.BackColor = System.Drawing.Color.Black
@@ -1120,6 +1113,38 @@ Partial Class Form1
         Me.TabPage7.TabIndex = 3
         Me.TabPage7.Text = "THRASH Editor"
         '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.Color.Black
+        Me.TabPage2.Controls.Add(Me.Label39)
+        Me.TabPage2.Controls.Add(Me.Gonhead)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 42)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(853, 432)
+        Me.TabPage2.TabIndex = 4
+        Me.TabPage2.Text = "Goner Editor"
+        '
+        'Gonhead
+        '
+        Me.Gonhead.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Gonhead.FormattingEnabled = True
+        Me.Gonhead.Location = New System.Drawing.Point(77, 124)
+        Me.Gonhead.Name = "Gonhead"
+        Me.Gonhead.Size = New System.Drawing.Size(52, 32)
+        Me.Gonhead.TabIndex = 30
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label39.ForeColor = System.Drawing.Color.White
+        Me.Label39.Location = New System.Drawing.Point(77, 97)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(52, 24)
+        Me.Label39.TabIndex = 33
+        Me.Label39.Text = "Head"
+        '
         'Form1
         '
         Me.AccessibleRole = System.Windows.Forms.AccessibleRole.None
@@ -1157,6 +1182,8 @@ Partial Class Form1
         Me.TabPage9.PerformLayout()
         Me.TabPage6.ResumeLayout(False)
         Me.TabPage6.PerformLayout()
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1212,7 +1239,6 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Part2 As ComboBox
-    Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage6 As TabPage
     Friend WithEvents Starwalk As CheckBox
     Friend WithEvents TabPage7 As TabPage
@@ -1256,4 +1282,7 @@ Partial Class Form1
     Friend WithEvents Lhp As TextBox
     Friend WithEvents Ldef As TextBox
     Friend WithEvents Label34 As Label
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents Gonhead As ComboBox
+    Friend WithEvents Label39 As Label
 End Class

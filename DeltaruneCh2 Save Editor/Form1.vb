@@ -52,8 +52,32 @@ Public Class Form1
             Lexp.Text = ListBox1.Items(527)
             Lcash.Text = ListBox1.Items(529)
             Llvl.Text = ListBox1.Items(528)
+            '' gone gone gone gone gone gone gone gone
 
-
+            If ListBox1.Items(1452) = 0 Then
+                Gonhead.SelectedItem = "1"
+            End If
+            If ListBox1.Items(1452) = 1 Then
+                Gonhead.SelectedItem = "2"
+            End If
+            If ListBox1.Items(1452) = 2 Then
+                Gonhead.SelectedItem = "3"
+            End If
+            If ListBox1.Items(1452) = 3 Then
+                Gonhead.SelectedItem = "4"
+            End If
+            If ListBox1.Items(1452) = 4 Then
+                Gonhead.SelectedItem = "5"
+            End If
+            If ListBox1.Items(1452) = 5 Then
+                Gonhead.SelectedItem = "6"
+            End If
+            If ListBox1.Items(1452) = 6 Then
+                Gonhead.SelectedItem = "7"
+            End If
+            If ListBox1.Items(1452) = 7 Then
+                Gonhead.SelectedItem = "8"
+            End If
 
             roomchanger.Text = ListBox1.Items(3053)
 
@@ -123,6 +147,10 @@ Public Class Form1
             If ListBox1.Items(9) = 4 Then
                 Part3.SelectedItem = "Noelle"
             End If
+
+
+
+
         End If
 
         Dim Tempfol As String = My.Computer.FileSystem.SpecialDirectories.Temp
@@ -216,6 +244,32 @@ Public Class Form1
         If Part3.SelectedItem = "Noelle" Then
             ListBox1.Items(9) = 4
         End If
+        '' gone save
+        If Gonhead.SelectedItem = "1" Then
+            ListBox1.Items(1452) = 0
+        End If
+        If Gonhead.SelectedItem = "2" Then
+            ListBox1.Items(1452) = 1
+        End If
+        If Gonhead.SelectedItem = "3" Then
+            ListBox1.Items(1452) = 2
+        End If
+        If Gonhead.SelectedItem = "4" Then
+            ListBox1.Items(1452) = 3
+        End If
+        If Gonhead.SelectedItem = "5" Then
+            ListBox1.Items(1452) = 4
+        End If
+        If Gonhead.SelectedItem = "6" Then
+            ListBox1.Items(1452) = 5
+        End If
+        If Gonhead.SelectedItem = "7" Then
+            ListBox1.Items(1452) = 6
+        End If
+        If Gonhead.SelectedItem = "8" Then
+            ListBox1.Items(1452) = 7
+        End If
+
 
         If darkkrisbox.Checked = True Then
             ListBox1.Items(15) = 1 ''Changes Kris to be in Dark World form.
@@ -292,11 +346,22 @@ Public Class Form1
         Part1.Items.Add("None")
         Part2.Items.Add("None")
         Part3.Items.Add("None")
-
+        Gonhead.Items.Add("1")
+        Gonhead.Items.Add("2")
+        Gonhead.Items.Add("3")
+        Gonhead.Items.Add("4")
+        Gonhead.Items.Add("5")
+        Gonhead.Items.Add("6")
+        Gonhead.Items.Add("7")
+        Gonhead.Items.Add("8")
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Loadbakbutton.Click
         '' Loads backup. I will implement this later lol
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
+
     End Sub
 
 
