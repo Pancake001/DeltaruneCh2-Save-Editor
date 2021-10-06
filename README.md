@@ -10,5 +10,5 @@ So my antivirus yells at me for trying to make a release build so just build it 
 
 Plans for when I get the "main thing" done:<br>
 Thrash Editor<br>
-Vessle Editor<br>
+Gonner Editor<br>
 Random button for fun. :)
