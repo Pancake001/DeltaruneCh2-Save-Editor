@@ -13,4 +13,4 @@ Thrash Editor<br>
 Gonner Editor<br>
 Random button for fun. :)<br>
 
-Issue from Pan2: The defense stats do not change.
+Note: DEF in the game is jank.
