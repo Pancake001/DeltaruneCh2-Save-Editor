@@ -1,6 +1,7 @@
 # [[hyperlink blocked]] v0.0 - A Deltarune Save Editor 
 
-
+# This was just an experiment and is no longer maintained, 
+# please use https://saveeditor.spamton.com instead.
 
 This is a tool I am making to make it easier to edit Deltarune Save Files. <br>
 People want me to name it "[[hyperlink blocked]]" <br>
